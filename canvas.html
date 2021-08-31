@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h2>zhexiantu</h2>
+    <canvas id="mc" width="500" height="400" style="border: 1px solid black;"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("mc");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+
+        ctx.moveTo(30,20);
+        ctx.lineWidth="1";
+        ctx.lineTo(30,380);
+        ctx.lineTo(400,380);
+
+
+        ctx.strokeStyle="#999"
+        for(var i=0;i<7;i++){
+            ctx.moveTo(30,30+50*i);
+            ctx.lineTo(400,30+50*i);
+        }
+
+
+        ctx.moveTo(100,300);
+        ctx.lineTo(200,200);
+        ctx.lineTo(280,200);
+        ctx.lineTo(380,30);
+        ctx.stroke();
+
+    </script>
+</body>
+</html>
