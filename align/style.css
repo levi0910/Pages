@@ -1,0 +1,18 @@
+.center{
+    border-width: 1px;
+    text-align: center;
+}
+.right{
+    border-width: 6px;
+    border-style: dashed;
+    text-align: right;
+}
+.decoration{
+    text-decoration: line-through;
+}
+.indent{
+    text-indent: 20px;
+}
+.line{
+    line-height: 40px;
+}
